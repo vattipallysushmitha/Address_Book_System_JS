@@ -1,3 +1,11 @@
+/*Ability to ensure Valid Contacts are added...
+ - First Name and Last Name should start with Capital and Minimum 3 Characters
+- Address, City and State should also have minimum 4 characters
+- Zip, Phone and Email should be valid as done in the Pattern Exercise
+- Throw Error if the RegEx test fails
+*/
+
+
 class Contact{
 
     constructor(...params){
