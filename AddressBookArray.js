@@ -1,11 +1,3 @@
-/*Ability to ensure Valid Contacts are added...
- - First Name and Last Name should start with Capital and Minimum 3 Characters
-- Address, City and State should also have minimum 4 characters
-- Zip, Phone and Email should be valid as done in the Pattern Exercise
-- Throw Error if the RegEx test fails
-*/
-
-
 class Contact{
 
     constructor(...params){
@@ -122,8 +114,21 @@ class Contact{
 }
 
 try{
-    let contact1 = new Contact("Sushmithaj","SReddy","Hyderbad","Gadwal","Telangana","907764345224","1223456","sush@gmail.com");
+    let contact1 = new Contact("Raj","Shah","ShantiNagar","Shahada","Maharashtra","121212","91 7766554433","raj@gmail.com");
     console.log(contact1.toString());
+
+    let contact2 = new Contact("Ram","Gavale","KrantiNagar","Shahada","Maharashtra","121212","91 1122112211","ram@gmail.com");
+    console.log(contact2.toString());
+
+    let contact3 = new Contact("Rizvan","Munshi","KashimaNagar","Shahada","Maharashtra","121212","91 1234562211","rijzan@gmail.com");
+    console.log(contact3.toString());
+
+    var addressBookArr = new Array();
+    addressBookArr.push(contact1);
+    addressBookArr.push(contact2);
+    addressBookArr.push(contact3);
 } catch(e) {
     console.log(e);
 }
+
+console.log(addressBookArr);
